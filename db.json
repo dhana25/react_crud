@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "mobile": 78897887899
+    },
+    {
+      "empid": 2,
+      "name": "kevin",
+      "email": "kevin@gmail.com",
+      "mobile": "95654567665",
+      "active": true,
+      "id": 2
+    },
+    {
+      "empid": 1,
+      "name": "harry",
+      "email": "harry@gmail.com",
+      "mobile": "9677767556",
+      "active": true,
+      "id": 3
+    },
+    {
+      "empid": 4,
+      "name": "vel2",
+      "email": "vel2@gmail.com",
+      "mobile": "9888877665",
+      "active": true,
+      "id": 4
+    },
+    {
+      "empid": 5,
+      "name": "Rohit",
+      "email": "rohit@gmail.com",
+      "mobile": "94535456632",
+      "active": true,
+      "id": 5
+    },
+    {
+      "name": "Putin",
+      "email": "putin@gmail.com",
+      "mobile": "977678666666",
+      "active": true,
+      "id": 6
+    }
+  ]
+}

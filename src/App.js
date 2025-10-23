@@ -1,12 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Employeelist from './Employeelist';
+import Employeecreate from './Employeecreate';
+import Employeeedit from './Employeeedit';
+import Employeeview from './Employeeview';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+       <h3>React js crud Application</h3> 
+       <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Employeelist/>}></Route>
+            <Route path="employee/create" element={<Employeecreate/>}></Route>
+            <Route path="employee/edit/:id" element={<Employeeedit/>}></Route>
+            <Route path="employee/view/:id" element={<Employeeview/>}></Route>
+          </Routes>
+       </BrowserRouter> 
     </div>
   );
 }
