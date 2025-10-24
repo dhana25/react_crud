@@ -1,10 +1,26 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Links, useNavigate } from "react-router-dom";
 import { Flip, toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Employeelist = () => {
-    const navigate = useNavigate()
+ const navigate = useNavigate()
+   useEffect(() => {
+    // Check if sessionStorage has user info (or token)
+    const user = sessionStorage.getItem("uname");
+
+    if (!user) {
+      // No session data — redirect to login
+      navigate("/login");
+    }
+  }, [navigate]);
+
+    const handleLogout = () => {
+    // ✅ Clear session storage only on logout
+    sessionStorage.clear();
+    navigate("/login");
+  };
+
     const view = (id) => {
         navigate('employee/view/' + id)
     }
@@ -67,6 +83,7 @@ const Employeelist = () => {
                 </div>
                 <div className="card-body pt-2">
                     <Link to="employee/create" className="btn btn-success float-end mb-2">Add Employee(+)</Link>
+                     <button onClick={handleLogout}  className="btn btn-danger" style={{float:'right'}}>Logout</button>
                     <table className="table table-bordered table-striped ">
                         <thead className="text-light table-dark">
                             <tr>
