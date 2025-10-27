@@ -66,13 +66,14 @@
   "register": [
     {
       "id": "king",
-      "pwd": "12345",
+      "pwd": "kohli@123",
       "fname": "king kohli",
       "email": "king@gmail.com",
       "phone": "9954453563",
       "country": "india",
       "address": "Delhi",
-      "gender": "male"
+      "gender": "male",
+      "role" : "admin"
     },
     {
       "id": "Rohit",
@@ -82,147 +83,54 @@
       "phone": "908765675",
       "country": "india",
       "address": "Mumbai",
-      "gender": "male"
-    },
-    {
-      "id": "jaddu",
-      "pwd": "j@123",
-      "fname": "jadeja",
-      "email": "jaddu@gmail.com",
-      "phone": "907665564",
-      "country": "india",
-      "address": "Gujarat",
-      "gender": "male"
-    },
-    {
-      "id": "mstarc",
-      "pwd": "M@123",
-      "fname": "mitchell",
-      "email": "mitchel@gmail.com",
-      "phone": "9024365435",
-      "country": "usa",
-      "address": "adelaid",
-      "gender": "male"
-    },
-    {
-      "id": "Bumrah",
-      "pwd": "b@123",
-      "fname": "Bumrah",
-      "email": "bumrah@gmail.com",
-      "phone": "908765455",
-      "country": "india",
-      "address": "Mumbai",
-      "gender": "male"
-    },
-    {
-      "id": "Warner",
-      "pwd": "w@123",
-      "fname": "David",
-      "email": "david@gmail.com",
-      "phone": "966545566",
-      "country": "usa",
-      "address": "hyderabad",
-      "gender": "male"
-    },
-    {
-      "id": "Rahul",
-      "pwd": "kl@123",
-      "fname": "kl rahul",
-      "email": "kl@gmail.com",
-      "phone": "988776765",
-      "country": "india",
-      "address": "Banglore",
-      "gender": "male"
-    },
-    {
-      "id": "Dohni",
-      "pwd": "magi@123",
-      "fname": "MS Dhoni",
-      "email": "dhoni@gmail.com",
-      "phone": "99977665666",
-      "country": "india",
-      "address": "Ranchi",
-      "gender": "male"
-    },
-    {
-      "id": "Gambir",
-      "pwd": "G@123",
-      "fname": "Gautam",
-      "email": "gambir@gmail.com",
-      "phone": "998977666",
-      "country": "usa",
-      "address": "Mumbai",
-      "gender": "male"
-    },
-    {
-      "id": "G1sGT9x",
-      "pwd": "",
-      "fname": "",
-      "email": "",
-      "phone": "",
-      "country": "",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "gMOfcBh",
-      "pwd": "",
-      "fname": "",
-      "email": "",
-      "phone": "",
-      "country": "",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "1NexViy",
-      "pwd": "",
-      "fname": "",
-      "email": "",
-      "phone": "",
-      "country": "",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "yetcAdo",
-      "pwd": "",
-      "fname": "",
-      "email": "",
-      "phone": "",
-      "country": "",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "rE8Ov_Q",
-      "pwd": "",
-      "fname": "",
-      "email": "",
-      "phone": "",
-      "country": "",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "hhtr",
-      "pwd": "tytry",
-      "fname": "htrytry",
-      "email": "ftyrt@fhgh",
-      "phone": "6576576557",
-      "country": "india",
-      "address": "",
-      "gender": ""
-    },
-    {
-      "id": "tretret",
-      "pwd": "fdfdg",
-      "fname": "rttr",
-      "email": "rtrt@fgf",
-      "phone": "65767657657",
-      "country": "usa",
-      "address": "",
-      "gender": ""
+      "gender": "male",
+      "role" : "user1"
     }
-  ]
+  ],
+
+  "roleaccess" : [
+    {
+      "role" : "admin",
+      "menu" : "customer",
+      "haveedit":true,
+      "haveadd" : true,
+      "havedelete":true
+  },
+   {
+      "role" : "user",
+      "menu" : "supplier",
+      "haveedit":true,
+      "haveadd" : true,
+      "havedelete":true
+  },
+  {
+      "role" : "user1",
+      "menu" : "customer",
+      "haveedit":true,
+      "haveadd" : true,
+      "havedelete":false
+  }
+
+],
+"customer" : [{
+  "code" : "1001",
+  "name" : "Arjun",
+  "email" : "arjun@gmail.com"
+},
+{
+  "code" : "1002",
+  "name" : "Jinta",
+  "email" : "jinta@gmail.com"
+},
+{
+  "code" : "1003",
+  "name" : "kumar",
+  "email" : "kumar@gmail.com"
+},
+{
+  "code" : "1004",
+  "name" : "Maxwell",
+  "email" :"maxwell@gmail.com"
+}
+]
 }
