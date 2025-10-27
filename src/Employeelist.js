@@ -79,11 +79,12 @@ const Employeelist = () => {
         <div className="container">
             <div className="card">
                 <div className="card-title">
-                    <h4 className="pt-2">Employee List</h4>
+                    <h4 className="pt-2 text-center">Employee List
+                     <Link to="employee/create" className="btn btn-success float-end mb-2">Add Employee(+)</Link>
+                     {/* <button onClick={handleLogout}  className="btn btn-danger" style={{float:'right'}}>Logout</button>*/}</h4> 
                 </div>
                 <div className="card-body pt-2">
-                    <Link to="employee/create" className="btn btn-success float-end mb-2">Add Employee(+)</Link>
-                     <button onClick={handleLogout}  className="btn btn-danger" style={{float:'right'}}>Logout</button>
+                   
                     <table className="table table-bordered table-striped ">
                         <thead className="text-light table-dark">
                             <tr>
@@ -108,7 +109,7 @@ const Employeelist = () => {
                     </table>
                 </div>
             </div>
-            <button onClick={toasted}>Notify!</button>
+            {/* <button onClick={toasted}>Notify!</button> */}
             <ToastContainer transition={Flip} limit={5}></ToastContainer>
         </div>
     )

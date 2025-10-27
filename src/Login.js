@@ -28,21 +28,18 @@ const Login = () => {
                     throw new Error()
                 }
             }).then((rep) => {
-
                 if (Object.keys(rep).length == 0) {
-                    toast.error("Please enter valid uname")
+                    toast.error("Please enter valid uname");
                 } else {
                     if (rep.pwd === pwd) {
                         toast.success("Logged success");
                         navigate('/')
-                        sessionStorage.setItem('uname',uname)
+                        sessionStorage.setItem('uname', uname);
+                        sessionStorage.setItem('urole', rep.role);
                     } else {
-                        toast.error("Please enter valid pwd")
+                        toast.error("Please enter valid pwd");
                     }
                 }
-
-
-
             }).catch((err) => {
                 toast.error('Invalid uname or pwd' + err.message)
             })
@@ -66,7 +63,7 @@ const Login = () => {
     }
 
     return (
-        <div className="row">
+        <div className="row mt-4">
             <div className="offset-lg-3 col-lg-6">
                 <form className="container" onSubmit={handleLogin}>
                     <div className="card">

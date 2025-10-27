@@ -40,3 +40,11 @@
 .errmsg {
   color:red;
 }
+
+.header{
+  padding:10px;
+  margin:10px;
+  background-color: blue;
+  color:#fff;
+}
+

@@ -89,7 +89,7 @@ const Register = () => {
         }
     }
     return (
-        <div className="offset-lg-3 col-lg-6">
+        <div className="offset-lg-3 col-lg-6 mt-4">
             <form className="container" onSubmit={handleSubmit}>
                 <div className="card">
                     <div className="card-header">
